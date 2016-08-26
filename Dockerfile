@@ -27,9 +27,6 @@ RUN docker-php-ext-install \
 
 RUN docker-php-ext-install bcmath
 
-RUN apt-get install -y \
-	php7.0-bcmath
-
 RUN curl -sS https://getcomposer.org/installer | \
     php -- \
       --install-dir=/usr/local/bin \
