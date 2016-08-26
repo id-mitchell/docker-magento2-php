@@ -51,6 +51,7 @@ echo "Running Magento 2 setup script..."
   --amqp-port=$M2SETUP_RABBITMQ_PORT \
   --amqp-user=$M2SETUP_RABBITMQ_USER \
   --amqp-password=$M2SETUP_RABBITMQ_PASSWORD \
+  --backend-frontname=$M2SETUP_BACKEND_FRONTNAME \
   $M2SETUP_USE_SAMPLE_DATA_STRING
 
 echo "The setup script has completed execution."
