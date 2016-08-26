@@ -49,7 +49,7 @@ echo "Running Magento 2 setup script..."
   --admin-password=$M2SETUP_ADMIN_PASSWORD \
   --amqp-host=$M2SETUP_RABBITMQ_HOST \
   --amqp-port=$M2SETUP_RABBITMQ_PORT \
-  --amqp-user=$M2SETUP_RABBITMQ_USER \ 
+  --amqp-user=$M2SETUP_RABBITMQ_USER \
   --amqp-password=$M2SETUP_RABBITMQ_PASSWORD \
   $M2SETUP_USE_SAMPLE_DATA_STRING
 
