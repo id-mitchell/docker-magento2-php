@@ -39,12 +39,12 @@ RUN pecl install xdebug-beta && \
 RUN touch /usr/local/etc/php/conf.d/xdebug.ini
 RUN echo "zend_extension=/usr/local/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so" >> /usr/local/etc/php/conf.d/xdebug.ini
 RUN echo "xdebug.remote_enable=1" >> /usr/local/etc/php/conf.d/xdebug.ini
-RUN echo "xdebug.remote_enable=1" >> /usr/local/etc/php/conf.d/xdebug.ini
-RUN echo "xdebug.remote_connect_back=1" >> /usr/local/etc/php/conf.d/xdebug.ini
+RUN echo "xdebug.remote_connect_back=0" >> /usr/local/etc/php/conf.d/xdebug.ini
 RUN echo "xdebug.remote_port=9000" >> /usr/local/etc/php/conf.d/xdebug.ini
 RUN echo "xdebug.scream=0" >> /usr/local/etc/php/conf.d/xdebug.ini
 RUN echo "xdebug.show_local_vars=1" >> /usr/local/etc/php/conf.d/xdebug.ini
 RUN echo "xdebug.idekey=PHPSTORM" >> /usr/local/etc/php/conf.d/xdebug.ini
+RUN echo "xdebug.remote_host=10.254.254.254" >> /usr/local/etc/php/conf.d/xdebug.ini
 
 ENV PHP_MEMORY_LIMIT 2G
 ENV PHP_PORT 9000

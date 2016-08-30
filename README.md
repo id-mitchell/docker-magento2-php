@@ -1,8 +1,13 @@
-# Versions
+#Setting up xdebug
 
-OK!
-- [`5.6.23-fpm-3` (_Dockerfile_)](https://github.com/mageinferno/docker-magento2-php/tree/5.6.23-fpm-3/Dockerfile)
-- [`7.0.8-fpm-3` (_Dockerfile_)](https://github.com/mageinferno/docker-magento2-php/tree/7.0.8-fpm-3/Dockerfile)
+To setup xdebug, on your host machine (i.e. your mac) run
+
+`sudo ifconfig lo0 alias 10.254.254.254`
+
+You may need to restart the docker boxes (`docker-compose restart`) and potentially PHPStorm to get things "talking" - after this point you will (probably) need to setup Path mappings. 
+
+[see this discussion](https://forums.docker.com/t/ip-address-for-xdebug/10460/19) for more info.
+
 
 # Description
 
