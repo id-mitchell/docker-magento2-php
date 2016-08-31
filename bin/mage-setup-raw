@@ -16,7 +16,7 @@ if [ "$M2SETUP_USE_ARCHIVE" = true ]; then
     curl -L $M2SETUP_ARCHIVE_PATH | tar xzf - -o -C .
   fi
 else
-  /usr/local/bin/php -d memory_limit=2G /usr/local/bin/composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=$M2SETUP_VERSION .
+  /usr/local/bin/php -d memory_limit=2G /usr/local/bin/composer create-project --repository-url=https://repo.magento.com/ $M2SETUP_REPO_PATH=$M2SETUP_VERSION .
 fi
 
 chmod +x ./bin/magento
